@@ -1,0 +1,165 @@
+GridLayout:
+    cols: 1
+    padding: 20
+    spacing: 10
+
+    Label:
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: "Agro Pet Reis"
+        font_size: 28
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: None
+        height: dp(80)
+        spacing: 10
+
+        Label:
+            id: lbl_conexao_whats
+            text: "Para utilizar a aplicação é necessário estar conectado ao WhatsApp Web, caso não esteja conectado,\nclique no botão abaixo e escaneie o Qr Code. Caso esteja conectado, pode prosseguir com a utilização."
+            font_size: 20
+
+        Button:
+            id: btn_conexao_whats
+            text: "Conectar WhatsApp Web"
+            font_size: 18
+            on_release: app.conexao_whatsAppWeb()
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: dp(40)
+
+        Label:
+            id: lbl_descricao_consulta
+            text: "Enviar mensagens de confirmação de consulta:"
+            font_size: 20
+
+        Button:
+            id: btn_confirmacao_consulta
+            text: "Confirmação de consulta"
+            font_size: 18
+            on_release: app.confirmar_consulta()
+
+    Label:
+        id: lbl_mensagem_consulta
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: ""
+        font_size: 18
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: dp(40)
+
+        Label:
+            id: lbl_descricao_vacina
+            text: "Enviar mensagens de vencimentos de vacina:"
+            font_size: 20
+
+        Button:
+            id: btn_vencimento_vacina
+            text: "Vencimento Vacina"
+            font_size: 18
+            on_release: app.vencimento_vacina()
+
+    Label:
+        id: lbl_mensagem_vacina
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: ""
+        font_size: 18
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: dp(40)
+
+        Label:
+            id: lbl_descricao_agenda
+            text: "Enviar a agenda diária do administrador:"
+            font_size: 20
+
+        Button:
+            id: btn_agenda_adm
+            text: "Agenda do Administrador"
+            font_size: 18
+            on_release: app.agenda_adm()
+
+    Label:
+        id: lbl_agenda_adm
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: ""
+        font_size: 18
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: dp(40)
+
+        Label:
+            id: lbl_descricao_erros
+            text: "Resolver os erros de confirmação de consulta:"
+            font_size: 20
+
+        Button:
+            id: btn_resolucao_erros
+            text: "Resolução de Erros de Consulta"
+            font_size: 18
+            on_release: app.resolucao_erros()
+
+    Label:
+        id: lbl_mensagem_erros
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: ""
+        font_size: 18
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: dp(40)
+
+        Label:
+            id: lbl_descricao_erros_vacina
+            text: "Resolver os erros de vencimento de vacina:"
+            font_size: 20
+
+        Button:
+            id: btn_resolucao_erros_vacina
+            text: "Resolução de Erros de Vacina"
+            font_size: 18
+            on_release: app.resolucao_erros_vacina()
+
+    Label:
+        id: lbl_mensagem_erros_vacina
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: ""
+        font_size: 18
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: dp(40)
+
+        Label:
+            id: lbl_descricao_erros_agenda
+            text: "Resolver os erros da agenda do administrador:"
+            font_size: 20
+
+        Button:
+            id: btn_resolucao_erros_agenda
+            text: "Resolução de Erros da Agenda"
+            font_size: 18
+            on_release: app.resolucao_erros_agenda()
+
+    Label:
+        id: lbl_mensagem_erros_agenda
+        size_hint_y: None
+        height: self.texture_size[1] + dp(20)
+        text: ""
+        font_size: 18
