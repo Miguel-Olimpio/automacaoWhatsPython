@@ -6,6 +6,8 @@
 
 O projeto se originou com o pedido de um cliente que necessitava enviar mensagens de forma automatica para seus clientes, no entanto a alternativa de criar um bot de whatsApp demonstrou ser pouco viável, logo foi feito um arquivo executavel em python que era capaz de ler os dados de um banco de dados e enviar as mensagens de forma automatica.
 
+O projeto é utilizado juntamente com o site do cliente que pode ser visualizado [clicando aqui](https://github.com/Miguel-Olimpio/AgroPetReis).
+
 ## Layout e modo de usar
 Primeiramente é necessário inserir as configurações para seu banco de dados e mensagens que deseja enviar, posteriormente basta gerar o executável com o comando pyinstaller main.py -w.
 Ao gerar o execútavel com o comando pyinstaller main.py -w, será criada uma pasta dist, a mesma deve conter os seguintes arquivos:
